@@ -33,6 +33,14 @@ default['jmxtrans']['default_queries']['kafka'] = [
       ]
   },
   {
+    'obj' => "kafka.controller:type=KafkaController,name=*",
+    'result_alias' => "kafka.KafkaController",
+    'attr' => 
+      [ 
+        "Value" 
+      ]
+  },
+  {
     'typeNames' => ["name","topic"],
     'obj' => "kafka.server:type=BrokerTopicMetrics,name=*, topic=*",
     'result_alias' => "kafka.BrokerTopicMetrics.perTopic",
