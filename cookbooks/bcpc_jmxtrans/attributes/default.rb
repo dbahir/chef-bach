@@ -48,7 +48,7 @@ default['jmxtrans']['default_queries']['kafka'] = [
 
   {
     'obj' => "kafka.server:type=ReplicaManager,name=*",
-    'result_alias' => "kafka.server.ReplicaManager",
+    'result_alias' => "kafka.ReplicaManager",
     'attr' => 
       [ 
         "Value" 
